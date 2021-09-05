@@ -74,7 +74,7 @@ function getUserInfo() {
 function renderAvatar(res) {
     // 有限获取用户昵称
     var name = res.nickname || res.username;
-    $('#welcome').html('欢迎' + name);
+    $('#welcome').html('欢迎&nbsp;&nbsp;' + name);
 
     // 显示用户头像
     if (res.user_pic !== null) {
